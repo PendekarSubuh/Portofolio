@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Muhamad Deja Alwi Dzulhian — Data Annotator and AI Training Data Specialist portfolio." />
+  <meta name="theme-color" content="#07110e" />
+  <title>DEJA / AI DATA SPECIALIST</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="grid-bg"></div>
+  <canvas id="particles"></canvas>
+  <div class="cursor-orb"></div>
+
+  <header class="site-header">
+    <div class="nav shell">
+      <a class="brand" href="#home" aria-label="Deja home"><span>DA</span><b>DEJA</b></a>
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation">MENU</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">ABOUT</a><a href="#experience">EXPERIENCE</a><a href="#work">WORK</a><a href="#skills">SKILLS</a>
+      </div>
+      <button class="outline-btn" data-email>LET'S TALK ↗</button>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero shell reveal">
+      <div class="hero-left">
+        <div class="eyebrow"><span class="dot"></span><span id="availability">AVAILABLE FOR OPPORTUNITIES</span><span class="mono">/ 2026</span></div>
+        <div class="hero-index mono">01 — INTRO</div>
+        <h1>Precision<br><em>builds trust.</em></h1>
+        <p class="hero-role" id="headline">Data Annotator · AI Training Data Specialist</p>
+        <p class="hero-copy">I build clean, consistent training data for AI systems — with a background in Information Systems and hands-on autonomous-driving annotation workflows.</p>
+        <div class="hero-actions">
+          <a class="solid-btn" href="#work">EXPLORE WORK <span>↓</span></a>
+          <button class="ghost-btn" id="openPortfolio">OPEN PORTFOLIO PDF <span>↗</span></button>
+        </div>
+        <div class="hero-meta"><span>JAKARTA, INDONESIA</span><span>2D · 3D · 4D</span><span>400+ DATA / DAY</span></div>
+      </div>
+
+      <div class="hero-right">
+        <div class="frame frame-back"></div><div class="frame frame-mid"></div>
+        <div class="hero-card">
+          <div class="card-top"><span>PROFILE / 001</span><span>AI DATA</span></div>
+          <div class="portrait">
+            <div class="portrait-letters">DA<span>.</span></div>
+            <div class="crosshair"></div><div class="scanline"></div>
+            <div class="sidecode">DETAIL<br>QUALITY<br>CONSISTENCY</div>
+            <div class="card-chip">SOP<br>READY</div>
+          </div>
+          <div class="card-bottom"><b>MUHAMAD DEJA ALWI DZULHIAN</b><span>01 / 03</span></div>
+        </div>
+        <div class="floating-note note-a"><span>QA BENCHMARK</span><b>~93%</b></div>
+        <div class="floating-note note-b"><span>OUTPUT</span><b>400+</b></div>
+      </div>
+    </section>
+
+    <section class="marquee" aria-label="specializations">
+      <div class="marquee-track"><span>AI DATA ANNOTATION</span><i>✦</i><span>LI DAR POINT CLOUD</span><i>✦</i><span>OBJECT TRACKING</span><i>✦</i><span>DATA QUALITY</span><i>✦</i><span>AI DATA ANNOTATION</span><i>✦</i><span>LI DAR POINT CLOUD</span><i>✦</i><span>OBJECT TRACKING</span><i>✦</i></div>
+    </section>
+
+    <section id="about" class="section shell reveal">
+      <div class="section-num mono">02 — ABOUT</div>
+      <div class="split-head"><h2>Data is the<br><em>foundation.</em></h2><div><p id="bio">Loading profile…</p><div class="button-row"><a class="mini-btn" href="/assets/CV_Muhamad_Deja_Alwi.pdf" target="_blank" rel="noreferrer">VIEW CV ↗</a><button class="mini-btn" id="copyEmail">COPY EMAIL</button></div></div></div>
+      <div class="stat-grid" id="stats"></div>
+    </section>
+
+    <section id="experience" class="section shell reveal">
+      <div class="section-num mono">03 — EXPERIENCE</div>
+      <div class="title-row"><h2>Recent <em>roles</em></h2><p>Hands-on work across AI data, content production, hospitality, and fast-paced team environments.</p></div>
+      <div class="timeline" id="experienceList"></div>
+    </section>
+
+    <section id="work" class="section shell reveal">
+      <div class="section-num mono">04 — SELECTED WORK</div>
+      <div class="title-row"><h2>Projects <em>in focus</em></h2><p>Actual work examples are summarized with confidentiality in mind. Click any card for more detail.</p></div>
+      <div class="filter-row"><button class="filter active" data-filter="all">ALL</button><button class="filter" data-filter="AI DATA">AI DATA</button><button class="filter" data-filter="DATA ANALYSIS">DATA ANALYSIS</button><button class="filter" data-filter="WEB DEVELOPMENT">WEB</button></div>
+      <div class="work-grid" id="projectGrid"></div>
+    </section>
+
+    <section id="skills" class="section shell reveal">
+      <div class="section-num mono">05 — SKILLS</div>
+      <div class="title-row"><h2>Tools for <em>precision</em></h2><p>Technical, QA, and communication skills shaped by real project workflows.</p></div>
+      <div class="skills-shell"><div class="skill-intro"><span class="mono">CORE PRINCIPLE</span><h3>FOLLOW<br>THE<br>GUIDE.</h3><p>Understand the SOP. Execute consistently. Validate before delivery.</p></div><div class="skill-list" id="skillList"></div></div>
+    </section>
+
+    <section class="section shell process reveal">
+      <div class="section-num mono">06 — WORKFLOW</div>
+      <div class="process-grid">
+        <div class="process-intro"><h2>My default<br><em>operating system.</em></h2><p>Brief → annotate → validate → deliver. Simple process, high attention.</p></div>
+        <div class="process-steps">
+          <div><span>01</span><b>Briefing</b><p>Review guidelines and edge cases before a batch.</p></div>
+          <div><span>02</span><b>Annotation</b><p>Label 2D, 3D, or 4D data with consistent rules.</p></div>
+          <div><span>03</span><b>QA & Validation</b><p>Check dimensions, attributes, tracking, and anomalies.</p></div>
+          <div><span>04</span><b>Delivery</b><p>Submit validated work and report throughput.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta shell reveal">
+      <div class="cta-grid"><div><span class="section-num mono">07 — CONTACT</span><h2>Let’s make<br><em>something precise.</em></h2></div><div class="cta-right"><button class="email-link" data-email>dezadzulhian@gmail.com <span>↗</span></button><p>Click to see the email, copy it, or open your mail application.</p><button class="solid-btn" id="openMessage">SEND A MESSAGE <span>↗</span></button></div></div>
+    </section>
+  </main>
+
+  <footer class="footer shell"><div>© <span id="year"></span> MUHAMAD DEJA ALWI DZULHIAN</div><div>AI DATA · ANNOTATION · SYSTEMS</div><a href="#home">TOP ↑</a></footer>
+
+  <div class="modal" id="emailModal" aria-hidden="true"><div class="backdrop" data-close></div><div class="modal-card"><button class="close" data-close>×</button><span class="mono">CONTACT / EMAIL</span><h3 id="emailTitle">dezadzulhian@gmail.com</h3><p>Your email is ready. Choose an action below.</p><div class="modal-actions"><button class="solid-btn" id="modalCopy">COPY EMAIL</button><a class="ghost-btn" href="mailto:dezadzulhian@gmail.com">OPEN MAIL APP ↗</a></div><span class="modal-status" id="copyStatus"></span></div></div>
+
+  <div class="modal" id="projectModal" aria-hidden="true"><div class="backdrop" data-close-project></div><div class="modal-card project-modal"><button class="close" data-close-project>×</button><span class="mono" id="pmCategory"></span><h3 id="pmTitle"></h3><p id="pmDescription"></p><div class="pm-stats" id="pmStats"></div><div class="detail-list" id="pmDetails"></div><div class="tag-row" id="pmTools"></div><button class="mini-btn" id="pmPdf">OPEN SOURCE PORTFOLIO PAGE ↗</button></div></div>
+
+  <div class="modal" id="pdfModal" aria-hidden="true"><div class="backdrop" data-close-pdf></div><div class="modal-card pdf-modal"><button class="close" data-close-pdf>×</button><div class="pdf-head"><span class="mono">PORTFOLIO / PDF</span><a class="mini-btn" href="/assets/portfolio.pdf" target="_blank" rel="noreferrer">OPEN FULL PDF ↗</a></div><iframe id="pdfFrame" title="Portfolio PDF" src="/assets/portfolio.pdf#page=1&view=FitH"></iframe></div></div>
+
+  <div class="modal" id="messageModal" aria-hidden="true"><div class="backdrop" data-close-message></div><div class="modal-card"><button class="close" data-close-message>×</button><span class="mono">CONTACT / MESSAGE</span><h3>Start a conversation.</h3><form id="contactForm"><input name="website" class="hp" tabindex="-1" autocomplete="off"><label>Name<input name="name" maxlength="120" placeholder="Your name"></label><label>Email<input name="email" type="email" maxlength="160" placeholder="you@example.com"></label><label>Message<textarea name="message" minlength="4" maxlength="5000" placeholder="Tell me what you need…" required></textarea></label><button class="solid-btn" type="submit">SEND MESSAGE ↗</button><p id="formStatus" class="modal-status"></p></form></div></div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
